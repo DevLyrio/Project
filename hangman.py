@@ -25,7 +25,7 @@ def hangman():
         word_list = [letter if letter in used_letters else '-' for letter in word]
         print("Palavra atual: ", ' '.join(word_list))
 
-        user_letter = input("Guess a letter: ").upper()
+        user_letter = input("Adivinhe a letra: ").upper()
         if user_letter in alphabet - used_letters:
             used_letters.add(user_letter)
             if user_letter in word_letters:

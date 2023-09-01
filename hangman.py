@@ -43,7 +43,7 @@ def hangman():
     if lives == 0:
         print("Você morreu, desculpe. A palavra era", word)
     else:
-        print("VVocê adivinhou a palavra", word, '!!')
+        print("Você adivinhou a palavra", word, '!!')
 
 
 if __name__ == '__main__':

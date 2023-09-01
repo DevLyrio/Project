@@ -23,7 +23,7 @@ def hangman():
         print("Você tem", lives, " vidas restantes e você já usou essas letras: ", ' '.join(used_letters))
 
         word_list = [letter if letter in used_letters else '-' for letter in word]
-        print("Current word: ", ' '.join(word_list))
+        print("Palavra atual: ", ' '.join(word_list))
 
         user_letter = input("Guess a letter: ").upper()
         if user_letter in alphabet - used_letters:
